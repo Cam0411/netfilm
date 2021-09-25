@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="reuser.css">
+</head>
+<body>
+    <div id="header">
+        <div class="grid"> 
+            <div class="header__flex">
+        <div class="header__logo">
+            <h1 class="heading__logo"> NetFilm  <i class="fas fa-film"></i> </h1>
+        </div>
+        <ul class="header__nav">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="">Categories <i class="fas fa-angle-down"></i> </a>
+               <ul class="header__sub-nav">
+                   <li><a href="">Categories</a></li>
+                   <li><a href="">Anime Details</a></li>
+                   <li><a href="">Anime Watching</a></li>
+                   <li><a href="">Blog Details</a></li>
+                   <li><a href="">Sign Up</a></li>
+                   <li><a href="">Login</a></li>
+               </ul>
+            </li>
+            <li><a href="">Our Big</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+        <ul class="header__icon"> 
+            <li><i class="menu__2 fas fa-search"></i></li>
+        <li><a href="user.html"><i class="fas fa-user"></i></a></li>
+    </ul>
+    <div class="menu header__menu-tablet">
+        <i class="fas fa-bars"></i>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="slider">
+     <div class="grid">
+         <div class="slider__box">
+             <h1 class="slider__heading">Login</h1>
+             <p class="slider__about">Welcome to the official Anime blog.</p>
+         </div>
+     </div>
+    </div>
+    <div id="content">
+      <div class="grid">
+          <div class="content__flex">
+              <div class="content__login">
+                  <h1 class="content__heading">Login</h1>
+                  <div class="content__input-box">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal__close">
+                <i class="fas fa-times"></i>
+            </div>
+              <ul class="modal__nav">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="#">Categories <i class="fas fa-angle-down"></i> </a>
+                   <ul class="header__sub-nav">
+                       <li><a href="#">Categories</a></li>
+                       <li><a href="#">Anime Details</a></li>
+                       <li><a href="#">Anime Watching</a></li>
+                       <li><a href="#">Blog Details</a></li>
+                       <li><a href="#">Sign Up</a></li>
+                       <li><a href="#">Login</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">Our Big</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+        </div>
+    </div>
+    <div class="modal__2">
+        <div class="modal__content-2">
+            <div class="modal__close-2">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal__ipn">    
+            <input type="text" placeholder="Search here" class="modal__text">
+        </div>
+        </div>
+    </div>
+    <script>
+        menus2 = document.querySelectorAll(".menu__2")
+        modal2 = document.querySelector(".modal__2")
+        modalClose2 = document.querySelector(".modal__close-2")
+        function showModal(){
+            modal2.classList.add('open2')
+        }
+        function hideModal(){
+            modal2.classList.remove('open2')
+        }
+        for(const menu2 of menus2){
+            menu2.addEventListener("click",showModal)
+        }
+        modalClose2.addEventListener("click",hideModal)
+    </script>
+
+    <script>
+        menus = document.querySelectorAll(".menu")
+        modal = document.querySelector(".modal")
+        modalClose = document.querySelector(".modal__close")
+        function showModal(){
+            modal.classList.add('open')
+        }
+        function hideModal(){
+            modal.classList.remove('open')
+        }
+        for(const menu of menus){
+            menu.addEventListener("click",showModal)
+        }
+        modalClose.addEventListener("click",hideModal)
+    </script>
+           
+</body>
+</html>

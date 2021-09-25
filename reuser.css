@@ -19,11 +19,9 @@
     {
         width: 100%;
     }
-    #slider img 
+    .heading__logo 
 {
-   border-radius: 5px;
-   width: 100%;
-   padding: 20px;
+    font-size: 20px;
 }
 .heading__logo i 
 {
@@ -31,9 +29,11 @@
     font-size: 20px;
     margin-left: 5px;
 }
-.heading__logo 
+    #slider img 
 {
-    font-size: 20px;
+   border-radius: 5px;
+   width: 100%;
+   padding: 20px;
 }
 .slider__sub-heading  
 {
@@ -190,7 +190,7 @@
 {
     color: #ffff;
     margin-top: 75%;
-    margin-left: 45%;
+    margin-left: 38%;
     font-size: 30px;
 }
 }
